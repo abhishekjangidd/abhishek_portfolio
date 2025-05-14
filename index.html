@@ -1,11 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Abhishek's Portfolio</title>
 </head>
-<body>
-    <h1>hello abhishek </h1>
+
+
+<body class="bg-gray-100 font-sans">
+    <header class="fixed top-0 left-0 right-0 shadow-md z-50">
+        <nav class="bg-white">
+            <ul class="flex justify-center space-x-10 py-4">
+                <li><a class="hover:text-blue-600 font-semibold" href="#Home">Home</a></li>
+                <li><a class="hover:text-blue-600 font-semibold" href="#About">About</a></li>
+                <li><a class="hover:text-blue-600 font-semibold" href="#Skills">Skills</a></li>
+                <li><a class="hover:text-blue-600 font-semibold" href="#Certifications">Certifications</a></li>
+                <li><a class="hover:text-blue-600 font-semibold" href="#Projects">Projects</a></li>
+                <li><a class="hover:text-blue-600 font-semibold" href="#Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="">
+        <!-- Hero Section -->
+        <section class="flex items-center justify-center bg-[url('profile.jpg')] bg-no-repeat bg-right min-h-screen"
+            id="Home">
+            <div class="text-left max-w-2xl px-4">
+                <h1 class="text-5xl font-bold leading-snug">Hello, I'm Abhishek<br>A Web Developer</h1>
+                <a href="certificate/AbhishekJangidResume.pdf" target="_blank"
+                    class="inline-block mt-6 px-6 py-2 bg-blue-500 text-white rounded shadow-lg shadow-blue-500/50  hover:bg-blue-600 hover:-translate-y-1">
+                    Download CV
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="py-24 text-center bg-white" id="About">
+            <img src="photo_abhishek.jpg" alt="Abhishek" class="w-60 rounded-full mx-auto mb-8">
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-lg max-w-3xl mx-auto">Hi, I'm Abhishek Jangid, B.Tech graduate from Guru Gobing Singh
+                Indraprasth University. I'm passionate about web development and design, constantly improving to build
+                beautiful and functional websites.</p>
+            <button class="mt-6 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg shadow-lg">View
+                Works</button>
+        </section>
+
+        <!-- Skills -->
+        <section class="bg-gray-100 py-24" id="Skills">
+            <h2 class="text-3xl text-center font-semibold mb-12">Skills</h2>
+            <div class="flex justify-center flex-wrap gap-10 py-5">
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/html-logo.png" alt="HTML"></div>
+                        <div class="back"><img src="photos/70.png" alt="HTML Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/CSS-logo.png" alt="CSS"></div>
+                        <div class="back"><img src="photos/70.png" alt="CSS Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/JS-logo.png" alt="JS"></div>
+                        <div class="back"><img src="photos/40.png" alt="JS Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/tailwindcss-logo.png" alt="Tailwind"></div>
+                        <div class="back"><img src="photos/65.png" alt="Tailwind Skill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center flex-wrap gap-10 py-5">
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/ps.png" alt="Adobe Photoshop"></div>
+                        <div class="back"><img src="photos/40.png" alt="HTML Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/illustrator.png" alt="Adobe Illustrator"></div>
+                        <div class="back"><img src="photos/70.png" alt="CSS Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/corel.png" alt="Corel Draw"></div>
+                        <div class="back"><img src="photos/40.png" alt="JS Skill"></div>
+                    </div>
+                </div>
+                <div class="maincontainer">
+                    <div class="card1">
+                        <div class="front"><img src="logo/autocad.png" alt="AutoCAD"></div>
+                        <div class="back"><img src="photos/65.png" alt="Tailwind Skill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+
+        <section class="py-24 bg-white" id="Certifications">
+            <h2 class="text-3xl text-center font-semibold mb-12">Certifications</h2>
+            <div class="card">
+                <h3><b>Full Stack Development</b></h3>
+                <p>By Internshala Trainings</p>
+                <a href="certificate/Full Stack Development_ Let's begin Training - Certificate of Completion.pdf"
+                    target="_blank">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3><b>Workshop on Cloud Computing(AWS)</b></h3>
+                <p>By CETPA</p>
+                <a href="certificate/cepta certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+            <div class="card">
+                <h3><b>Web Development Fundamentals</b></h3>
+                <p>By Solo Learn</p>
+                <a href="certificate/web-dev-certificate.pdf" target="_blank">View Certificate</a>
+            </div>
+        </section>
+
+        <!-- projects -->
+
+        <section class="py-24 bg-gray-100" id="Projects">
+            <h2 class="text-3xl text-center font-semibold mb-12">Projects</h2>
+            <div class="card">
+                <h3><b>E-Book Library</b></h3>
+                <p>An e-book library a wide range of digital books accessible on electronic devices, providing
+                    convenience and affordability to readers worldwide.</p>
+            </div>
+            <div class="card">
+                <h3><b>Unique Chats</b></h3>
+                <p>Unique Chats is a social media app where users can express their thoughts, connect with new people
+                    worldwide, and chat with their friends.</p>
+            </div>
+            <div class="card">
+                <h3><b>Crave Cart</b></h3>
+                <p>Crave Cart is an online food ordering platform designed specifically for college campuses aimed at
+                    minimizing queues at the canteen. Students can conveniently place their orders either from their
+                    tables or directly from their classrooms.</p>
+            </div>
+        </section>
+
+        <!-- Contact Info -->
+        <section class="py-24 bg-white" id="Contacts">
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Address</h2>
+                    <p class="flex items-center gap-4 mb-2"><img src="logo/address-logo.png" class="w-6">Palam Colony,
+                        New Delhi - 110045</p>
+                    <p class="flex items-center gap-4 mb-2"><img src="logo/call-logo.png" class="w-6">+91 6396405666</p>
+                    <p class="flex items-center gap-4"><img src="logo/mail-logo.png"
+                            class="w-6">abhishek.j1801@gmail.com</p>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+                    <form onsubmit="sendEmail(); this.reset(); return false;">
+                        <input type="text" id="name" placeholder="Name"
+                            class="block w-full p-2 mb-4 bg-gray-100 rounded">
+                        <input type="email" id="email" placeholder="Email"
+                            class="block w-full p-2 mb-4 bg-gray-100 rounded">
+                        <input type="number" id="phone" placeholder="Phone no."
+                            class="block w-full p-2 mb-4 bg-gray-100 rounded">
+                        <button type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded shadow">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- Email sending script placeholder -->
 </body>
+
 </html>
