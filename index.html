@@ -31,7 +31,7 @@
             id="Home">
             <div class="text-left max-w-2xl px-4">
                 <h1 class="text-5xl font-bold leading-snug">Hello, I'm Abhishek<br>A Web Developer</h1>
-                <a href="certificate/AbhishekJangidResume.pdf" target="_blank"
+                <a href="certificate/Abhishek Jangid resume.pdf" target="_blank"
                     class="inline-block mt-6 px-6 py-2 bg-blue-500 text-white rounded shadow-lg shadow-blue-500/50  hover:bg-blue-600 hover:-translate-y-1">
                     Download CV
                 </a>
@@ -151,20 +151,21 @@
         </section>
 
         <!-- Contact Info -->
-        <section class="py-24 bg-white" id="Contacts">
-            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div>
-                    <h2 class="text-3xl font-semibold mb-4">Address</h2>
-                    <p class="flex items-center gap-4 mb-2"><img src="logo/address-logo.png" class="w-6">Palam Colony,
+        <section class=" bg-white place-content-center place-items-center" id="Contacts">
+            <div class="p-20 w-3/4 flex ">
+                <div class="w-1/2 place-content-center">
+                    <h2 class="text-3xl font-semibold mb-4 ">Address</h2>
+                    <p class="flex items-center gap-4 mb-2 text-xl"><img src="logo/address-logo.png" class="w-6">Palam Colony,
                         New Delhi - 110045</p>
-                    <p class="flex items-center gap-4 mb-2"><img src="logo/call-logo.png" class="w-6">+91 6396405666</p>
-                    <p class="flex items-center gap-4"><img src="logo/mail-logo.png"
+                    <p class="flex items-center gap-4 mb-2 text-xl"><img src="logo/call-logo.png" class="w-6">+91 6396405666</p>
+                    <p class="flex items-center gap-4 text-xl"><img src="logo/mail-logo.png"
                             class="w-6">abhishek.j1801@gmail.com</p>
                 </div>
 
-                <div>
+                <div class="w-1/2 place-content-center">
                     <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
-                    <form onsubmit="sendEmail(); this.reset(); return false;">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="">
+                    <input type="hidden" name="access_key" value="1c910b21-9ea9-42c0-9139-ed6aaddd4d85">
                         <input type="text" id="name" placeholder="Name"
                             class="block w-full p-2 mb-4 bg-gray-100 rounded">
                         <input type="email" id="email" placeholder="Email"
